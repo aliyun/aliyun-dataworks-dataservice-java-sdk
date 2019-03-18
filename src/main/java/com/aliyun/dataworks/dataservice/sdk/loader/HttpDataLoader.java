@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
  * HTTP协议数据服务执行层
  *
  * @author yangya
- * @date 2018/09/10
+ * date 2018/09/10
  */
 @Service
 public class HttpDataLoader implements DataLoader {

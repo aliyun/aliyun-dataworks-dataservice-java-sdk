@@ -87,7 +87,6 @@ public class HttpVisitor implements AutoCloseable {
     /**
      * @Deprecated 尽量使用已经封装好的HTTP访问方法，不宜直接业务中调用httpclient。
      */
-    @Deprecated
     public CloseableHttpClient getClient() {
         return getMultiThreadHttpClient();
     }

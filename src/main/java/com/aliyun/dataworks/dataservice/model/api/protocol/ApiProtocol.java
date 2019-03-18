@@ -7,7 +7,7 @@ import com.aliyun.dataworks.dataservice.model.common.IntEnum;
  * API类型<br>
  *
  * @author jiuling.ypf
- * @date 2017/10/18
+ * date 2017/10/18
  */
 public enum ApiProtocol implements IntEnum<ParamType> {
 

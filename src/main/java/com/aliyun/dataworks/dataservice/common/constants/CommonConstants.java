@@ -2,7 +2,7 @@ package com.aliyun.dataworks.dataservice.common.constants;
 
 /**
  * @author lizheng
- * @date 2017/9/29
+ * date 2017/9/29
  */
 public interface CommonConstants {
 

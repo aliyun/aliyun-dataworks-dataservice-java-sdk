@@ -7,7 +7,7 @@ import org.apache.http.StatusLine;
 /**
  *
  * @author lizheng
- * @date 2017/11/1
+ * date 2017/11/1
  */
 @Data
 @NoArgsConstructor

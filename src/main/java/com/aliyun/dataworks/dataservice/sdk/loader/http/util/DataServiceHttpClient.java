@@ -137,7 +137,8 @@ public class DataServiceHttpClient {
      * @param signHeaderPrefixList
      * @param appKey
      * @param appSecret
-     * @return
+     * @param type
+     * @return Response
      * @throws Exception
      */
     public static <T> Response<T> httpGet(String host, String path, int connectTimeout, int readTimeout, int connectionRequestTimeout,
@@ -171,7 +172,7 @@ public class DataServiceHttpClient {
      * @param signHeaderPrefixList
      * @param appKey
      * @param appSecret
-     * @return
+     * @return Response
      * @throws Exception
      */
     public static <T> Response<T> httpPost(String host, String path, int connectTimeout, int readTimeout, int connectionRequestTimeout,
@@ -209,13 +210,17 @@ public class DataServiceHttpClient {
      * @param host
      * @param path
      * @param connectTimeout
+     * @param readTimeout
+     * @param connectionRequestTimeout
      * @param headers
      * @param querys
      * @param body
      * @param signHeaderPrefixList
      * @param appKey
      * @param appSecret
-     * @return
+     * @param type
+     * @param <T>
+     * @return Response
      * @throws Exception
      */
     public static <T> Response<T> httpPost(String host, String path, int connectTimeout, int readTimeout,int connectionRequestTimeout ,

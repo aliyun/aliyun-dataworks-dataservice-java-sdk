@@ -33,8 +33,6 @@ public class MessageDigestUtil {
     /**
      * 先进行MD5摘要再进行Base64编码获取摘要字符串
      *
-     * @param str
-     * @return
      */
     public static String base64AndMD5(String str) {
         if (str == null) {
@@ -45,8 +43,6 @@ public class MessageDigestUtil {
 
     /**
      * 先进行MD5摘要再进行Base64编码获取摘要字符串
-     *
-     * @return
      */
     public static String base64AndMD5(byte[] bytes) {
         if (bytes == null) {
@@ -66,9 +62,6 @@ public class MessageDigestUtil {
 
     /**
      * UTF-8编码转换为ISO-9959-1
-     *
-     * @param str
-     * @return
      */
     public static String utf8ToIso88591(String str) {
         if (str == null) {
@@ -84,9 +77,6 @@ public class MessageDigestUtil {
 
     /**
      * ISO-9959-1编码转换为UTF-8
-     *
-     * @param str
-     * @return
      */
     public static String iso88591ToUtf8(String str) {
         if (str == null) {
@@ -102,9 +92,6 @@ public class MessageDigestUtil {
 
     /**
      * String转换为字节数组
-     *
-     * @param str
-     * @return
      */
     private static byte[] toBytes(final String str) {
         if (str == null) {

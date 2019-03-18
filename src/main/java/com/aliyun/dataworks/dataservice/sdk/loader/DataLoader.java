@@ -15,7 +15,7 @@ public interface DataLoader {
      * @param request  请求实体
      * @param type 需要返回的对象类型
      * @param <T> 需要返回的对象类型
-     * @return
+     * @return Response
      * @throws Exception
      */
     <T> Response<T> dataLoad(Request request, Type type) throws Exception;
