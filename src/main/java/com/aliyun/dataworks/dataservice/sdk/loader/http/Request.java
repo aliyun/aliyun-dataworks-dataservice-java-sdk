@@ -23,7 +23,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.aliyun.dataworks.dataservice.model.api.protocol.ApiProtocol;
-import com.aliyun.dataworks.dataservice.sdk.loader.http.enums.Method;
 
 /**
  * Request
@@ -34,7 +33,7 @@ public class Request {
     public Request() {
     }
 
-    public Request(Method method, String host, String path, String appKey, String appSecret, int timeout) {
+    public Request(String method, String host, String path, String appKey, String appSecret, int timeout) {
         this.method = method;
         this.host = host;
         this.path = path;        
@@ -68,7 +67,7 @@ public class Request {
     /**
      * （必选）请求方法
      */
-    private Method method;
+    private String method;
 
     /**
      * （必选）Host
@@ -121,11 +120,11 @@ public class Request {
     
     
 
-    public Method getMethod() {
+    public String getMethod() {
         return method;
     }
 
-    public void setMethod(Method method) {
+    public void setMethod(String method) {
         this.method = method;
     }
 

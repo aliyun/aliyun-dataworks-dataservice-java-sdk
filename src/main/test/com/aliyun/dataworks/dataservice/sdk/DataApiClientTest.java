@@ -1,9 +1,9 @@
 package com.aliyun.dataworks.dataservice.sdk;
 
+import com.aliyun.dataworks.dataservice.common.http.constant.HttpMethod;
 import com.aliyun.dataworks.dataservice.model.api.protocol.ApiProtocol;
 import com.aliyun.dataworks.dataservice.sdk.facade.DataApiClient;
 import com.aliyun.dataworks.dataservice.sdk.loader.http.Request;
-import com.aliyun.dataworks.dataservice.sdk.loader.http.enums.Method;
 import com.aliyun.dataworks.dataservice.sdk.loader.http.util.DataServiceHttpClient;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -31,7 +31,7 @@ public class DataApiClientTest {
         request.setHost("*");
         request.setPath("*");
         request.setApiProtocol(ApiProtocol.HTTP);
-        request.setMethod(Method.POST);
+        request.setMethod(HttpMethod.POST);
         request.getBodys().put("a", "a");
         String result = dataApiClient.dataLoad(request,String.class);
         System.out.println(result);

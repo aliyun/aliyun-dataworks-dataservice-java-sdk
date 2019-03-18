@@ -6,6 +6,7 @@ import java.util.Map;
 import com.alibaba.fastjson.JSON;
 
 import com.aliyun.dataworks.dataservice.common.constants.CommonConstants;
+import com.aliyun.dataworks.dataservice.common.http.constant.HttpMethod;
 import com.aliyun.dataworks.dataservice.sdk.common.Service;
 import com.aliyun.dataworks.dataservice.sdk.loader.http.Request;
 import com.aliyun.dataworks.dataservice.sdk.loader.http.Response;
@@ -28,8 +29,7 @@ public class HttpDataLoader implements DataLoader {
      * 获取数据的方法
      * @param request  请求实体
      * @param type 需要返回的对象类型
-     * @param <T>
-     * @return
+     * @param <T>  需要返回的对象类型
      * @throws Exception
      */
 	@Override
@@ -43,12 +43,12 @@ public class HttpDataLoader implements DataLoader {
         }
 
 		switch (request.getMethod()) {
-		case GET:
+		case HttpMethod.GET:
 			Map<String, Object> bodys = request.getBodys();
 			bodys.putAll(request.getQuerys());
 			request.setQuerys(bodys);
 			return get(request, type);
-		case POST:
+		case HttpMethod.POST:
 			return postString(request, type);
 		default:
 			throw new IllegalArgumentException(String.format("unsupported method:%s", request.getMethod()));
