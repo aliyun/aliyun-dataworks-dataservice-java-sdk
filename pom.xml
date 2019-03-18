@@ -9,8 +9,8 @@
         <version>7</version>
     </parent>
     <groupId>com.aliyun.dataworks</groupId>
-    <artifactId>aliyun-data-service-sdk</artifactId>
-    <name>aliyun-data-service-sdk</name>
+    <artifactId>aliyun-dataworks-dataservice-java-sdk</artifactId>
+    <name>aliyun-dataworks-dataservice-java-sdk</name>
     <version>0.0.1-aliyun-SNAPSHOT</version>
     <url>http://maven.apache.org</url>
     <properties>
@@ -27,7 +27,7 @@
         </developer>
     </developers>
     <scm>
-        <url>https://github.com/aliyun/aliyun-data-service-sdk</url>
+        <url>https://github.com/aliyun/aliyun-dataworks-dataservice-java-sdk</url>
     </scm>
     <licenses>
         <license>
